@@ -54,7 +54,7 @@
 ### Hallucination
 - Treat recalled facts as potentially stale. When asked to check or verify something, consult the relevant current source: inspect repository files for codebase claims and authoritative external sources for external or time-sensitive claims.
 - Use internal knowledge primarily for reasoning and synthesis, not as a substitute for available source verification.
-- Clearly distinguish verified facts from inferences and unresolved uncertainty. If you believe a sentence is a fact, provide a citation. A citation MUST be substantiated by an URI, an URI can be a URL, a file path or something similar. Use IEEE's citation style. Any sentence withOUT a citation is considered an opinion.
+- Clearly distinguish verified facts from inferences and unresolved uncertainty. If you believe a sentence is a fact, provide a citation. A citation MUST be substantiated by an URI, an URI can be a URL, a file path or something similar. You should clearly locate the exact site where you are referring to, for each include line number(s) for a text file, or timestamp of a video file, etc. Use IEEE's citation style. Any sentence withOUT a citation is considered an opinion.
 
 
 ### Over-eagerness
