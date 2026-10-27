@@ -63,7 +63,7 @@
 
 ## Visibility enhancements
 - Use Claude Code's Edit or Codex's patch/edit mechanism for file changes so edited files remain visible.
-- All intermediate/throwaway files must only be written under `<project root>/tmp/<model-name>/`(e.g., gemini-4-argon/gpt-6.1-sol/claude-opus-5.5) directory, regularly cleanup your own tmp files, after they are no longer used.
+- All intermediate/throwaway files must only be written under `<project root>/tmp/<model-name>/`(e.g., gemini-4-argon/gpt-6.1-sol/claude-opus-5.5) directory, cleanup your own tmp files after they are no longer used for more than seven days.
 
 
 ## Memory management
