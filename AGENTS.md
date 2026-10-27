@@ -75,7 +75,7 @@
   - Automatic Pruning: `MEMORY.md` should contain historical entries up to 1 month, anything older than that shall be removed.
   - Isolation: read only your own `MEMORY.md`, there may be other `MEMORY.md` files belonging to other models, do not read them.
 - Long-term preference:
-  - When you learn a new developer preference, workflow habit, or project rule, do not just keep it in your internal context. Explicitly append it to `<project root>/tmp/PREFERENCE-<model-name>.md` (hereafter `PREFERENCE.md`) and prefix each entry with date. Do NOT use any other files for preference tracking, keep everything explicit and visible to developers.
+  - When you learn a new developer preference, workflow habit, or project rule, do not just keep it in your internal context. Explicitly append it to `<project root>/PREFERENCE/<model-name>.md` (hereafter `PREFERENCE.md`) and prefix each entry with date. Do NOT use any other files for preference tracking, keep everything explicit and visible to developers.
   - Commit `PREFERENCE.md`.
   - When started, read your own `PREFERENCE.md`, do NOT read other models' `PREFERENCE.md`, even if they exist.
   - `PREFERENCE.md` should not overrule `AGENTS.md`, but you should explicitly ask if such a conflict is noticed.
