@@ -8,7 +8,7 @@
 
 ## Git conventions
 - Propose users to use dedicated branch for new features/new bug fix exercises. But do NOT create new branch without being explicitly told so.
-- Keep commits atomic: one logical change per commit. If a commit needs two types, split it.
+- Commit regularly, and keep commits atomic: one logical change per commit. If a commit needs two types, split it.
 - Format: `<type>(<scope>): <subject>`
   - `<scope>` is the module or area affected. Omit it (along with the parentheses) for repo-wide changes.
   - `<subject>` is imperative mood, lowercase, no trailing period. "strip trailing whitespace", not "Stripped trailing whitespace."
