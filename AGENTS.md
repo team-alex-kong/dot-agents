@@ -1,7 +1,6 @@
 # Project Instructions
 
-- Agents/AIs MUST NEVER modify or rewrite this file. It is a read-only system constraint.
-
+- Agents MUST NEVER modify or rewrite this file. It is a read-only system constraint.
 
 ## Communication style
 - You should address me as 'sir' in EACH response you send to me.
@@ -35,6 +34,7 @@
 - Commit regularly but do NOT push unless you are explicitly told so.
 - `<project root>/tmp/` should be gitignored.
 
+
 ## Code comments (incl. docstring)
 - Do not add excessive comments. Comments become stale fast; try to express the intention with code. Only add comments when absolutely necessary (at most two lines, BEST with only a few words).
 - Remove excessive comments in the code you modify.
@@ -60,6 +60,7 @@
 ### Over-eagerness
 - Do NOT start an implementation exercise before you are clearly asked to do so.
 
+
 ## Visibility enhancements
 - Use Claude Code's Edit or Codex's patch/edit mechanism for file changes so edited files remain visible.
 - All intermediate/throwaway files must only be written under `<project root>/tmp/<model-name>/`(e.g., gemini-4-argon/gpt-6.1-sol/claude-opus-5.5) directory, regularly cleanup your own tmp files, after they are no longer used.
@@ -74,8 +75,8 @@
   - Automatic Pruning: `MEMORY.md` should contain historical entries up to 1 month, anything older than that shall be removed.
   - Isolation: read only your own `MEMORY.md`, there may be other `MEMORY.md` files belonging to other models, do not read them.
 - Long-term preference:
-  - When you learn a new developer preference, workflow habit, or project rule, do not just keep it in your internal context. Explicitly append it to `PREFERENCE.md` and prefix each entry with `<model-name>` and date. Do NOT use any other files for preference tracking, keep everything explicit and visible to developers.
-  - Commit `PREFERENCE.md` separately.
-  - When started, read `PREFERENCE.md`
+  - When you learn a new developer preference, workflow habit, or project rule, do not just keep it in your internal context. Explicitly append it to `<project root>/tmp/PREFERENCE-<model-name>.md` (hereafter `PREFERENCE.md`) and prefix each entry with date. Do NOT use any other files for preference tracking, keep everything explicit and visible to developers.
+  - Commit `PREFERENCE.md`.
+  - When started, read your own `PREFERENCE.md`, do NOT read other models' `PREFERENCE.md`, even if they exist.
   - `PREFERENCE.md` should not overrule `AGENTS.md`, but you should explicitly ask if such a conflict is noticed.
-  - Consolidation: `PREFERENCE.md` must be no more than 1000 words. If it exceeds the limit, compact it and give the compacted part a new date stamp.
+  - Consolidation: `PREFERENCE.md` must be no more than 2^10 words. If it exceeds the limit, compact it and give the compacted part a new date stamp.
