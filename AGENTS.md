@@ -89,3 +89,7 @@
   - Knowledge that must last (APIs, data, environments) goes in `<project root>/KNOWLEDGE/<model-name>.md` (hereafter `KNOWLEDGE.md`);
   - The file is not rotated by time, but it must not have more than 10,000 token; otherwise you need to compact it, based on the relevance of the knowledge.
   - Never use harnesses' internal knowledge files that are not explicitly sanctioned by the above rules.
+
+
+## Skills
+- When users ask you to perform a task with a skill, check the `skills` directory next to this `AGENTS.md` file.
