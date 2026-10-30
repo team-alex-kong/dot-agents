@@ -85,3 +85,7 @@
   - When started, read your own `PREFERENCE.md`, do NOT read other models' `PREFERENCE.md`, even if they exist.
   - `PREFERENCE.md` should not overrule `AGENTS.md`, but you should explicitly ask if such a conflict is noticed.
   - Consolidation: `PREFERENCE.md` must be no more than 2^10 words. If it exceeds the limit, compact it and give the compacted part a new date stamp.
+- Long-term knowledge:
+  - Knowledge that must last (APIs, data, environments) goes in `<project root>/KNOWLEDGE/<model-name>.md` (hereafter `KNOWLEDGE.md`);
+  - The file is not rotated by time, but it must not have more than 10,000 token; otherwise you need to compact it, based on the relevance of the knowledge.
+  - Never use harnesses' internal knowledge files that are not explicitly sanctioned by the above rules.
