@@ -80,7 +80,7 @@ Combine the refined comments into a final output.
 - **Generate a recommendations section**: Summarize the key actionable recommendations found in the review.
 - **Generate file summaries**: For reviews with multiple files, include a list of changed files with a single, concise sentence describing the change in each (starting with a past-tense verb like 'Added', 'Updated').
 - When writing file paths, write them as Markdown links.
-- Ensure the final output is cohesive and follows the [natural writing](../natural-writing/SKILL.md) skill.
+- Ensure the final output is cohesive.
 
 ## Output Format
 
