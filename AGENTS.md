@@ -71,7 +71,7 @@
 - All intermediate/throwaway files must only be written under `<project root>/tmp/<model-name>/`(e.g., gemini-4-argon/gpt-6.1-sol/claude-opus-5.5) directory, cleanup your own tmp files after they are no longer used for more than seven days. You do not need to keep a detailed record on which files are in used or not, just check the system's last modification timestamp shall suffice.
 
 
-## Memory management
+## Context management
 - Short-term memory:
   - File name and file path: Use memory file at `<project root>/tmp/MEMORY-<model-name>.md` (hereafter `MEMORY.md`); If the file does not exist, create one.
   - At Session Startup: Read `MEMORY.md` to understand your current objectives, recent changes, and outstanding tasks.
@@ -89,7 +89,11 @@
   - Knowledge that must last (APIs, data, environments) goes in `<project root>/KNOWLEDGE/<model-name>.md` (hereafter `KNOWLEDGE.md`);
   - The file is not rotated by time, but it must not have more than 10,000 token; otherwise you need to compact it, based on the relevance of the knowledge.
   - Never use harnesses' internal knowledge files that are not explicitly sanctioned by the above rules.
-
+- Shared context:
+  - Shared context can be read by multiple agents, it is useful for anonymous peer-review purpose;
+  - The path is `<project root>/tmp/shared/`;
+  - Context files written to `shared` directory should typically given a meaningful name, withOUT revealing the identity of the author of the file.
+  - Cleanup rules: delete the files in the shared context directory that is modified seven days ago.  
 
 ## Skills
 - When users ask you to perform a task with a skill, check the `skills` directory next to this `AGENTS.md` file.
