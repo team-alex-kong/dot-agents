@@ -92,7 +92,7 @@
 - Shared context:
   - Shared context can be read by multiple agents, it is useful for anonymous peer-review purpose;
   - The path is `<project root>/tmp/shared/`;
-  - Context files written to `shared` directory should typically given a meaningful name, withOUT revealing the identity of the author of the file.
+  - Context files written to `shared` directory should typically be given a meaningful name, withOUT revealing the identity of the author of the file.
   - Cleanup rules: delete the files in the shared context directory that is modified seven days ago.  
 
 ## Skills
