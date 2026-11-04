@@ -93,3 +93,9 @@
 
 ## Skills
 - When users ask you to perform a task with a skill, check the `skills` directory next to this `AGENTS.md` file.
+
+## Language-specific rules
+### Python
+- run `mypy --strict` for all source code files, all reported type errors should be satisfactorily handled or explicitly reported if a resolution is impossible
+### C++
+- TBD
